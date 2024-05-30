@@ -32,11 +32,13 @@ Specific techniques used include:
 The grid search identified the optimal hyperparameters for the SVD model, resulting in improved recommendation accuracy:
 Evaluating RMSE, MAE of algorithm SVD on 5 split(s).
 
-                  Fold 1  Fold 2  Fold 3  Fold 4  Fold 5  Mean    Std     
-RMSE (testset)    0.8495  0.8528  0.8478  0.8585  0.8435  0.8504  0.0050  
-MAE (testset)     0.6517  0.6518  0.6502  0.6600  0.6462  0.6520  0.0045  
-Fit time          1.41    1.20    1.09    1.17    1.21    1.22    0.11    
-Test time         0.03    0.05    0.05    0.06    0.08    0.05    0.02  
+| Metric          | Fold 1 | Fold 2 | Fold 3 | Fold 4 | Fold 5 | Mean   | Std   |
+|-----------------|--------|--------|--------|--------|--------|--------|-------|
+| RMSE (testset)  | 0.8557 | 0.8474 | 0.8446 | 0.8538 | 0.8523 | 0.8508 | 0.0042|
+| MAE (testset)   | 0.6571 | 0.6521 | 0.6472 | 0.6526 | 0.6531 | 0.6524 | 0.0031|
+| Fit time        | 0.93   | 0.94   | 1.09   | 0.93   | 0.94   | 0.97   | 0.06  |
+| Test time       | 0.03   | 0.05   | 0.05   | 0.05   | 0.03   | 0.04   | 0.01  |
+
 
 Top 10 recommendations for a sample user (ID: 1) include:
 1. Shawshank Redemption, The (1994)
